@@ -1,3 +1,4 @@
+/*
 package domain
 
 object Algebraic extends App {
@@ -61,4 +62,4 @@ object Algebraic extends App {
   println("Friday's next business day" + testing.nextBusinessDay(testing.friday))
 
   val testing2 = Cons("Hello", Cons("world", End()))
-}
+}*/
