@@ -6,6 +6,7 @@ object Monoids extends App {
   println(optionAddMonoid.zero)
 
   println(functionAddMonoid.op(a => a / 2, b => b * 3))
+
 }
 
 trait Monoid[A] {
@@ -15,9 +16,10 @@ trait Monoid[A] {
 
 object optionAddMonoid extends Monoid[Option[Int]] {
 
-  def zero[Option] = Option.empty
-  def op (a: Option[Int], b: Option[Int]) : Option[Int] = Some(a.get + a.get)
+  def zero[Option] =  Option.empty
+  def op (a: Option[Int], b: Option[Int]) : Option[Int] = Some(a.get + b.get)
 }
+
 
 trait Monoid2[A] {
   def zero[A]
