@@ -24,5 +24,4 @@ object TypeClassing extends App {
       if(this.element > comparable.element) println(true) else println(false)
     }
   }
-
 }
